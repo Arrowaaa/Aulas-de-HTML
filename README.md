@@ -38,7 +38,7 @@
   - [x] *Criação de Tabelas*.
   - [x] *Criação de Rodapé (Creditos finais)*.
      
-- [x] *Criar uma página de locadora com os metodos e tags aprendidas*
+- [x] *Criar uma página de locadora com os bannes e filmes disponiveis para assistir *
   - [x] *Utilização de imagens e seus ajustes(por link ou por caminho do diretório, assim como as dimensões delas)*
   - [x] *Utilização de tags*.
   - [x] *Utilização da hierarquia das heading tags*.
