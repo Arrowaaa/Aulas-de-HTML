@@ -37,6 +37,17 @@
   - [x] *Vinculação de página com o google maps*.
   - [x] *Criação de Tabelas*.
   - [x] *Criação de Rodapé (Creditos finais)*.
+     
+- [x] *Criar uma página de locadora com os metodos e tags aprendidas*
+  - [x] *Utilização de imagens e seus ajustes(por link ou por caminho do diretório, assim como as dimensões delas)*
+  - [x] *Utilização de tags*.
+  - [x] *Utilização da hierarquia das heading tags*.
+  - [x] *Utilização de listas*.
+  - [x] *Criações de tabelas*.
+    - [x] *Utilização de Tabela*.
+  - [x] *Utilização de formatações de textos*.
+  - [x] *Utilização de link para imagem e tema, com a função de ir de uma pagina para a outras*.
+  - [x] *Criação de Rodapé (Creditos finais)*.
     
 - [ ] *Replicação ou forma fiel de alguns sites/páginas*.
 - [ ] *Documentar cada página*.
