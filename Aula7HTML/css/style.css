@@ -16,11 +16,11 @@
     gap: 15px;
 }
 
-.menu .inicio{
-    background-color:rgba(255, 255, 255, 0.5);
-    border: 1px solid black;
-    color: black;
+.menu ul li a:hover {
+    background-color: white; /* Altera a cor de fundo para branco */
+    color: black; /* Altera a cor do texto para preto */
 }
+
 
 .menu ul li{
     display: inline-block;

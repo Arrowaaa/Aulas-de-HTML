@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviço</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        body {
+            position: relative;
+        }
+
+        h1 {
+            font-size: 60px;
+            text-align: center;
+            color: black;
+            font-family: "Croissant One", "serif";
+        }
+
+        .botao-grande {
+            font-size: 30px;
+            color: gray;
+            position: absolute;
+            /* Posiciona o botão voltar absolutamente em relação ao corpo */
+            top: 20px;
+            /* Ajusta a distância do topo */
+            left: 20px;
+            /* Ajusta a distância da esquerda */
+        }
+
+        .banner {
+            width: 100%;
+            height: auto;
+        }
+
+        .servicos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            position: absolute;
+            /* Posiciona o contêiner de serviços absolutamente em relação ao corpo */
+            top: 50%;
+            /* Ajusta a posição verticalmente para o meio */
+            left: 50%;
+            /* Ajusta a posição horizontalmente para o meio */
+            transform: translate(-50%, -50%);
+            /* Centraliza o contêiner */
+            padding: 20px;
+            /* Adiciona algum espaçamento interno */
+        }
+
+        .servicos-item {
+            background-color: #07b67c;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 10px;
+            /* Adiciona uma borda em torno de cada item */
+            max-width: 250px;
+            /* Define uma largura máxima para cada item */
+            margin: auto;
+            /* Centraliza os itens horizontalmente */
+        }
+
+        .servicos-item img {
+            width: 100%;
+            height: auto;
+            max-width: 900px; /* Ajusta a largura máxima para 300 pixels */
+            
+            /* Adiciona uma borda em torno de cada imagem */
+            border-bottom: none;
+            /* Remove a borda na parte inferior */
+        }
+
+        .servicos-item p {
+            margin: 10px 0;
+            color: black;
+        }
+
+        .descricao {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html" class="botao-grande">Voltar</a>
+
+    <h1>Serviço terra Fertilis</h1>
+    <img src="./img/background-muda.jpg" alt="banner de mudas de plantas" class="banner">
+
+    <div class="servicos">
+        <div class="servicos-item">
+            <img src="./img/coco.webp" alt="Imagem de mudas de coco">
+            <a>Muda de Coco</a>
+            <p>R$ 37,50</p>
+            <a em class="descricao"> A Muda de Coco, conhecida cientificamente como Cocos nucifera, é uma planta
+                tropical altamente
+                valorizada por suas diversas utilidades e caractéristicas distintas. Essa espécie de palmareira
+                </em></a>
+        </div>
+        <div class="servicos-item">
+            <img src="./img/coco.webp" alt="Imagem de mudas de coco">
+            <a>Muda de Coco</a>
+            <p>R$ 37,50</p>
+            <a em class="descricao"> A Muda de Coco, conhecida cientificamente como Cocos nucifera, é uma planta
+                tropical altamente
+                valorizada por suas diversas utilidades e caractéristicas distintas. Essa espécie de palmareira
+                </em></a>
+        </div>
+        <div class="servicos-item">
+            <img src="./img/coco.webp" alt="Imagem de mudas de coco">
+            <a>Muda de Coco</a>
+            <p>R$ 37,50</p>
+            <a em class="descricao"> A Muda de Coco, conhecida cientificamente como Cocos nucifera, é uma planta
+                tropical altamente
+                valorizada por suas diversas utilidades e caractéristicas distintas. Essa espécie de palmareira
+                </em></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
