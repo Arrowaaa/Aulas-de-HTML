@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.logo{
+    width: 100px;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.menu ul li a:hover {
+    background-color: white; /* Altera a cor de fundo para branco */
+    color: black; /* Altera a cor do texto para preto */
+}
+
+.sobre ul li {
+    display: inline-block;
+}
+.menu ul li a{
+    /* border: tamanho do traçado, tipo e a cor */
+    border: 1px solid white;
+    /* padding: altura, largura */
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    color: rgb(6, 2, 2);
+    text-decoration: none;
+    font-family: "Croissant One","serif";
+    
+}
+
+.sobre main{
+    display: flex;
+    align-items: baseline ;
+    justify-content: center;
+    gap: 20px;
+    
+}
+.menu .linha {
+    background-color: rgba(245, 245, 245, 0.5);
+}
+.sobre h1{
+    font-family: "Croissant One","serif";
+    font-size: 100px;
+    color:#050605;
+    gap: 20px;
+    
+}
+.sobre h2{
+    font-family: "Croissant One","serif";
+    font-size: 75px;
+    color:#2a382a;
+}
+body {
+    width: 100vw; 
+    height: 100vh;
+    background: url(../img/background-sobre.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-position-x: 60vw;
+    background-repeat: no-repeat;
+}
+.sobre p{
+    font-size: 25px;
+    margin: 20px 20vw 0 10vw;
+   
+
+}

@@ -32,6 +32,7 @@
     height: 100vh;
 }
 
+
 .menu ul li a{
     /* border: tamanho do traçado, tipo e a cor */
     border: 1px solid white;
@@ -44,6 +45,9 @@
     text-decoration: none;
     font-family: "Croissant One","serif";
     
+}
+.menu .linha {
+    background-color: rgba(250, 249, 249, 0.5);
 }
 header{
     display: flex;
