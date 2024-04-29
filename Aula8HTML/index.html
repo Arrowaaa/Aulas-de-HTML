@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- inputs e formulario- é usado para criar controles interativos para formulários baseados na web para receber dados do usuário.-->
+    <!-- o que são inputs? o que é um formulario -->
+    <div class="box">
+        <form action="form.html">
+            <!-- <input type="text" maxlength="10" placeholder="Digite seu nome">
+            <input type="number" placeholder="Digite seu número">
+            <input type="date">
+            <input type="time">
+            <input type="datetime-local">
+            <input type="color">
+            <input type="checkbox">
+            <input type="checkbox" checked>
+            <input type="radio">
+            <input type="radio"checked>
+            <input type="button" value="Botão">
+            <input type="file">
+            <input type="password" placeholder="Digite sua senha"> -->
+
+                <!--disabled desativa a possibilidade de editar um campo -->
+                <!--readonly desativa a possibilidade de editar um campo mais como é um campo para leitura ele fica mais visivel-->
+
+            <h1>Preencha Seu Dados</h1>
+                <br>
+
+            <label>Nome: </label>
+            <input type="text" placeholder="Digite seu Nome" nome="nome">
+            <label>Telefone:</label>
+            <input type="number" placeholder="Digite seu número" name="numerotelefonico">
+            <br>
+            <label>E-mail:</label>
+            <input type="email" placeholder="Digite Seu Email" name="email">
+            <label>Data de Nascimento:</label>
+            <input type="date" name="data_nascimento">
+            <label>Idade:</label>
+            <input type="number" placeholder="Digite sua idade" name="idade">
+            <br><br>
+            <label>Gênero:</label>
+            <br>
+            <label for="m">Masculino</label>
+            <input type="radio" name="genero" value="M" id="m">
+            <br>
+            <label for="f">Ferminino</label>
+            <input type="radio" name="genero" value="F" id="f">
+            <br>
+            <label for="o">Outros</label>
+            <input type="radio" name="genero" value="O" id="o">
+            <br><br>
+            <label>Deixe sua mensagem:</label>
+            <br>
+            <textarea name="texto" cols="30" rows="10">
+
+            </textarea>
+            <br><br>
+            <input type="submit">
+        </form>
+
+    </div>
+</body>
+
+</html>
