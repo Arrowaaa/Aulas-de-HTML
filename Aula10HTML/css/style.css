@@ -7,17 +7,18 @@
 }
 
 .box{
-    background-color: aliceblue;
+
     height: 500px;
-    width: 500px;
+    width: 100%;
+    max-width: 900px;
     margin: auto;
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
-    border:  5px solid #000;
+    border:  5px solid whitesmoke;
     border-radius: 20px;
-    background-color: skyblue;
+    
 }
 button{
     background-color: #f0f0f0;
@@ -26,14 +27,62 @@ button{
 }
 
 .titulo{
-    color: aliceblue;
+    color: rgb(5, 5, 5);
 }
 
 .texto{
     font-size: 26px;
     font-weight: 900;
+    color: rgb(245, 243, 243);
+}
+.font_black{
     color: black;
 }
+.font_branco{
+    color: white;
+}
 .tomato{
-    background-color: burlywood;
+    background-color: black;
+}
+.skyblue{
+    background-color: skyblue;
+}
+
+/*@media comando para aplicar novos estilos a pagina */
+/*screen-> a referência é a tela do usuário */
+/*max-width for igual a 770px */
+@media screen  and (max-width: 770px){
+    .corpinho{
+        background-color: tomato;
+        transition: 1s;
+    }
+    
+    .box{
+        height: 250px;
+        transition: 1s;
+    }
+
+}
+@media screen  and (min-width: 770px){
+    .corpinho{
+        background-color: black;
+        transition: 1s;
+    }
+    
+    .box{
+        animation: movimento 3s linear infinite;
+    }
+
+}
+
+@keyframes movimento {
+    100%{
+        width: 900px;
+    }
+    50%{
+        width: 500px;
+    }
+    10%{
+        width: 100px;
+    }
 }
