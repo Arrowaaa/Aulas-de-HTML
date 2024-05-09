@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explicação</title>
+    <link rel="stylesheet" href="./css/grid.css">
+</head>
+<body>
+    <h2>grid-auto-flow: Column</h2>
+    <p>Esta propriedade determina como os itens de grade são automaticamente colocados no grid. Você pode definir se eles fluem em linhas ou colunas automaticamente.</p>
+    <p>A propriedade grid-auto-columns é semelhante à grid-auto-rows, mas ela controla o tamanho padrão das colunas criadas automaticamente quando não há uma especificação explícita para essas colunas.</p>
+    <div class="container flow-row">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </div>
+    <h2>grid-auto-flow: Row</h2>
+    <p>A propriedade grid-auto-rows é usada para definir o tamanho padrão das linhas que são criadas automaticamente em um contêiner de grade CSS quando não há uma especificação explícita para essas linhas. Isso é útil quando você possui um layout em grade onde algumas colunas ou linhas são explicitamente definidas, mas outras são criadas dinamicamente com base no conteúdo.</p>
+<div class="container flow-column">
+  <section>
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+  </section>
+</div>
+<h2>grid-auto-flow: Dense</h2>
+<p>Dense: Está instruindo o algoritmo de layout da grade a preencher os espaços disponíveis na grade da forma mais eficiente possível, mesmo que isso signifique colocar itens fora de sua ordem original.</p>
+<div class="container flow-dense">
+  <section>
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+  </section>
+</div>
+<div>
+    <h1>justify-items: </h1>
+    <p>A propriedade justify-items é usada para alinhar horizontalmente os itens (elementos filhos) dentro das células de uma grade (grid). Ela permite definir como os itens se comportam em relação ao eixo horizontal da célula da grade.</p>
+    <br>
+    <h1>justify-items: start</h1>
+    <p>Start: Alinha os itens da grade no início da célula da grade ao longo do eixo principal. Isso significa que os itens serão alinhados no início do espaço disponível dentro de cada célula da grade, deixando espaço em branco no final da célula se o item for menor do que a largura da célula.</p>
+    <section class="justify-items start">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </section>
+  </div>
+  
+  <div>
+    <h1>justify-items: end</h1>
+    <p>End: Os itens da grade são alinhados no final da célula da grade ao longo do eixo principal. Isso faz com que os itens sejam posicionados no final do espaço disponível dentro de cada célula da grade, deixando espaço em branco no início da célula se o item for menor do que a largura da célula.</p>
+    <section class="justify-items end">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </section>
+  </div>
+  
+  <div>
+    <h1>justify-items: center</h1>
+    <p>Center: Os itens da grade são centralizados horizontalmente dentro das células da grade, deixando espaços iguais em ambos os lados, se houver espaço disponível. Isso significa que, se um item for menor do que a largura da célula da grade, ele será centralizado na célula, e se for maior, ele será cortado igualmente em ambos os lados para manter o alinhamento central.</p>
+    <section class="justify-items center">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </section>
+  </div>
+  
+  <div>
+    <h1>justify-items: stretch</h1>
+    <p>Stretch, os itens da grade serão esticados para preencher toda a largura das células da coluna, independentemente do tamanho intrínseco do item.</p>
+    <section class="justify-items stretch">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </section>
+  </div>
+  <div>
+    <h1>align-items:</h1>
+    <p>A propriedade align-items é usada para alinhar verticalmente os itens (elementos filhos) dentro das células de uma grade (grid). Ela permite definir como os itens se comportam em relação ao eixo vertical da célula da grade.</p>
+    <br>
+    <h1>align-items: start</h1>
+    <p>Start: Os itens da grade são alinhados ao início da célula da grade ao longo do eixo transversal. Isso significa que os itens serão alinhados no início do espaço disponível dentro de cada célula da grade, deixando espaço em branco no final da célula se o item for menor do que a altura da célula.</p>
+    <section class="align-items start">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </section>
+  </div>
+  
+  <div>
+    <h1>align-items: end</h1>
+    <p>End: Os itens da grade são alinhados no final da célula da grade ao longo do eixo transversal. Isso fará com que os itens sejam posicionados no final do espaço disponível dentro de cada célula da grade, deixando espaço em branco no início da célula se o item for menor do que a altura da célula.</p>
+    <section class="align-items end">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </section>
+  </div>
+  
+  <div>
+    <h1>align-items: center</h1>
+    <p>Center: Os itens da grade são centralizados verticalmente dentro das células da grade ao longo do eixo transversal. Isso significa que os itens serão centralizados na vertical dentro das células da grade, deixando espaços iguais acima e abaixo, se houver espaço disponível.</p>
+    <section class="align-items center">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </section>
+  </div>
+  
+  <div>
+    <h1>align-items: stretch</h1>
+    <p>Stretch: Os itens da grade são esticados para preencher toda a altura da célula da grade ao longo do eixo transversal. Isso fará com que os itens ocupem toda a altura disponível dentro das células da grade, independentemente do tamanho intrínseco do item.</p>
+    <section class="align-items stretch">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </section>
+  </div>
+  <div>
+    <h1>justify-content: start</h1>
+    <p></p>
+    <section class="justify-content start">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </section>
+  </div>
+  
+  <div>
+    <h1>justify-content: end</h1>
+    <p></p>
+    <section class="justify-content end">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </section>
+  </div>
+  
+  <div>
+    <h1>justify-content: center</h1>
+    <section class="justify-content center">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </section>
+  </div>
+  
+  <div>
+    <h1>justify-content: space-around</h1>
+    <section class="justify-content space-around">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </section>
+  </div>
+  
+  <div>
+    <h1>justify-content: space-between</h1>
+    <section class="justify-content space-between">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </section>
+  </div>
+  
+  <div>
+    <h1>justify-content: space-evenly</h1>
+    <section class="justify-content space-evenly">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </section>
+  </div>
+  
+  <div>
+    <h1>justify-content: stretch</h1>
+    <section class="justify-content stretch">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </section>
+  </div>
+  <div>
+    <h1>align-content: start</h1>
+    <section class="align-content start">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </section>
+  </div>
+  
+  <div>
+    <h1>align-content: end</h1>
+    <section class="align-content end">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </section>
+  </div>
+  
+  <div>
+    <h1>align-content: center</h1>
+    <section class="align-content center">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </section>
+  </div>
+  
+  <div>
+    <h1>align-content: space-around</h1>
+    <section class="align-content space-around">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </section>
+  </div>
+  
+  <div>
+    <h1>align-content: space-between</h1>
+    <section class="align-content space-between">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </section>
+  </div>
+  
+  <div>
+    <h1>align-content: space-evenly</h1>
+    <section class="align-content space-evenly">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </section>
+  </div>
+  
+  <div>
+    <h1>align-content: stretch</h1>
+    <section class="align-content stretch">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </section>
+  </div>
+  <br>
+  <div class="container">
+    <div class="item cabecalho">Cabeçalho</div>
+    <div class="item menu-lateral">Menu Lateral</div>
+    <div class="item principal">Conteúdo Principal</div>
+    <div class="item rodape">Rodapé</div>
+  </div>
+  <div>
+    <h1>grid-column</h1>
+    <p>A propriedade grid-column é usada no CSS Grid para controlar a colocação horizontal de um item (elemento filho) dentro de uma célula de grade (grid cell) no layout em grade. Ela permite definir em qual coluna da grade o item deve começar e onde deve terminar.</p>
+    <section class="grid-column grid-column-1">
+      <div class="item item-1">Item 1</div>
+      <div class="item item-2">Item 2</div>
+      <div class="item item-3">Item 3</div>
+      <div class="item item-4">Item 4</div>
+      <div class="item item-5">Item 5</div>
+      <div class="item item-6">Item 6</div>
+    </section>
+  </div>
+  
+  <div>
+    <h1>grid-column: span</h1>
+    <p>A palavra-chave span indica que o elemento deve ocupar um número específico de colunas</p>
+    <section class="grid-column grid-column-2">
+      <div class="item item-1">Item 1</div>
+      <div class="item item-2">Item 2</div>
+      <div class="item item-3">Item 3</div>
+      <div class="item item-4">Item 4</div>
+      <div class="item item-5">Item 5</div>
+      <div class="item item-6">Item 6</div>
+    </section>
+  </div>
+  
+  <div>
+    <h1>grid-column-start / grid-column-end</h1>
+    <section class="grid-column grid-column-3">
+      <div class="item item-1">Item 1</div>
+      <div class="item item-2">Item 2</div>
+      <div class="item item-3">Item 3</div>
+      <div class="item item-4">Item 4</div>
+      <div class="item item-5">Item 5</div>
+      <div class="item item-6">Item 6</div>
+    </section>
+  </div>
+  <div>
+    <h1>grid-row</h1>
+    <section class="grid-row grid-row-1">
+      <div class="item item-1">Item 1</div>
+      <div class="item item-2">Item 2</div>
+      <div class="item item-3">Item 3</div>
+      <div class="item item-4">Item 4</div>
+      <div class="item item-5">Item 5</div>
+      <div class="item item-6">Item 6</div>
+    </section>
+  </div>
+  
+  <div>
+    <h1>grid-row: span</h1>
+    <p>A palavra-chave span indica que o elemento deve ocupar um número específico de linhas</p>
+    <p>A propriedade grid-row é usada no CSS Grid para controlar a colocação vertical de um item (elemento filho) dentro de uma célula de grade (grid cell) no layout em grade. Ela permite definir em qual linha da grade o item deve começar e onde deve terminar.</p>
+    <section class="grid-row grid-row-2">
+      <div class="item item-1">Item 1</div>
+      <div class="item item-2">Item 2</div>
+      <div class="item item-3">Item 3</div>
+      <div class="item item-4">Item 4</div>
+      <div class="item item-5">Item 5</div>
+      <div class="item item-6">Item 6</div>
+    </section>
+  </div>
+  
+  <div>
+    <h1>grid-row-start / grid-row-end</h1>
+    <section class="grid-row grid-row-3">
+      <div class="item item-1">Item 1</div>
+      <div class="item item-2">Item 2</div>
+      <div class="item item-3">Item 3</div>
+      <div class="item item-4">Item 4</div>
+      <div class="item item-5">Item 5</div>
+      <div class="item item-6">Item 6</div>
+    </section>
+  </div>
+  <div>
+    <h1>grid-area: cabecalho; </h1>
+    <p>Com essa propriedade, você pode atribuir um item de grade a uma área nomeada no grid definida pelo grid-template-areas. Ela também pode ser usada como uma propriedade abreviada, isso significa que ela pode substituir as propriedades grid-row e grid-column, recebendo seus valores.</p>
+    <section class="container-1">
+      <div class="item cabecalho">Cabeçalho</div>
+      <div class="item menu-lateral">Menu Lateral</div>
+      <div class="item principal">Conteúdo Principal</div>
+      <div class="item rodape">Rodapé</div>
+    </section>
+  </div>
+  
+  <div>
+    <h1>grid-area: 1 / 2 / 3 / 4</h1>
+    <p></p>
+    <section class="container-2">
+      <div class="item item-1">Item 1</div>
+      <div class="item item-2">Item 2</div>
+      <div class="item item-3">Item 3</div>
+      <div class="item item-4">Item 4</div>
+      <div class="item item-5">Item 5</div>
+      <div class="item item-6">Item 6</div>
+    </section>
+  </div>
+  <div>
+
+    <h1>justify-self:</h1>
+    <p>A propriedade justify-self é usada para alinhar horizontalmente um item (elemento filho) dentro de sua célula de grade (grid cell). Ela permite que você controle o posicionamento horizontal de um item individual em relação à sua célula da grade.</p>
+    <br>
+    <h1>justify-self: start</h1>
+    <p>Start: </p>
+    <section class="container start">
+      <div class="item item-1">Item 1</div>
+      <div class="item item-2">Item 2</div>
+      <div class="item item-3">Item 3</div>
+      <div class="item item-4">Item 4</div>
+      <div class="item item-5">Item 5</div>
+      <div class="item item-6">Item 6</div>
+    </section>
+  </div>
+  
+  <div>
+    <h1>justify-self: end</h1>
+    <p>End: </p>
+    <section class="container end">
+      <div class="item item-1">Item 1</div>
+      <div class="item item-2">Item 2</div>
+      <div class="item item-3">Item 3</div>
+      <div class="item item-4">Item 4</div>
+      <div class="item item-5">Item 5</div>
+      <div class="item item-6">Item 6</div>
+    </section>
+  </div>
+  
+  <div>
+    <h1>justify-self: center</h1>
+    <p>Center: </p>
+    <section class="container center">
+      <div class="item item-1">Item 1</div>
+      <div class="item item-2">Item 2</div>
+      <div class="item item-3">Item 3</div>
+      <div class="item item-4">Item 4</div>
+      <div class="item item-5">Item 5</div>
+      <div class="item item-6">Item 6</div>
+    </section>
+  </div>
+  
+  <div>
+    <h1>justify-self: stretch</h1>
+    <p>Stretch: </p>
+    <section class="container stretch">
+      <div class="item item-1">Item 1</div>
+      <div class="item item-2">Item 2</div>
+      <div class="item item-3">Item 3</div>
+      <div class="item item-4">Item 4</div>
+      <div class="item item-5">Item 5</div>
+      <div class="item item-6">Item 6</div>
+    </section>
+  </div>
+</body>
+</html>
+
