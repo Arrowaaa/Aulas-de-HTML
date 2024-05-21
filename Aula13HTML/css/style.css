@@ -69,7 +69,7 @@ header nav {
 
 #produtos {
     /* background-color: gray; */
-    height: 100vh;
+    height: 100%;
 }
 
 #produtos .titulo{
