@@ -36,3 +36,9 @@ function proximoSlide() {
     showSlide(indexSlide);
 
 }
+
+
+//troca sozinho
+setInterval(() => {
+    proximoSlide()
+},10000);
